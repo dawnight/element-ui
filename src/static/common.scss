@@ -1,0 +1,9 @@
+.el-col-0 {
+  display: none;
+}
+
+@for $i from 0 through 24 {
+  .el-col-#{$i} {
+    width: (1 / 24 * $i * 100) * 1%;
+  }
+}
